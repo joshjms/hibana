@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Hibana </title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://use.fontawesome.com/05f9009fe4.js"></script>
+    <script src="https://kit.fontawesome.com/63a581d50e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="hibana">
+        <audio id="audioFile" onended = "nextSong()">
+            <source src="songs/internet-overdose.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="audioFile" onended = "nextSong()">
+            <source src="songs/ange-du-blanc-pur.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="audioFile" onended = "nextSong()">
+            <source src="songs/tell-your-world.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="audioFile" onended = "nextSong()">
+            <source src="songs/patchwork-staccato.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="audioFile" onended = "nextSong()">
+            <source src="songs/shinpakusuu.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="audioFile" onended = "nextSong()">
+            <source src="songs/letter-song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="audioFile" onended = "nextSong()">
+            <source src="songs/nuit.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="audioFile" onended = "nextSong()">
+            <source src="songs/hana-ni-bourei.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="songContainer">
+            <div class="song">
+                <h1> INTERNET OVERDOSE </h1>
+                <p> AKIE </p>
+                <div class="songControls">
+                    <button class="btn" id="backward-btn" onclick = "prevSong()"> <i class="fa-solid fa-backward-fast"></i> </button>
+                    <button class="btn" id="play-pause-btn" onclick="playAudio()"> <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="btn" id="forward-btn" onclick = "nextSong()"> <i class="fa-solid fa-forward-fast"></i> </button>
+                </div>
+            </div>
+            <div class="song" style="display: none;">
+                <h1> ANGE DU BLANC PUR </h1>
+                <p> NANAHIRA </p>
+                <div class="songControls">
+                    <button class="btn" id="backward-btn" onclick = "prevSong()"> <i class="fa-solid fa-backward-fast"></i> </button>
+                    <button class="btn" id="play-pause-btn" onclick="playAudio()"> <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="btn" id="forward-btn" onclick = "nextSong()"> <i class="fa-solid fa-forward-fast"></i> </button>
+                </div>
+            </div>
+            <div class="song" style="display: none;">
+                <h1> TELL YOUR WORLD </h1>
+                <p> HATSUNE MIKU </p>
+                <div class="songControls">
+                    <button class="btn" id="backward-btn" onclick = "prevSong()"> <i class="fa-solid fa-backward-fast"></i> </button>
+                    <button class="btn" id="play-pause-btn" onclick="playAudio()"> <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="btn" id="forward-btn" onclick = "nextSong()"> <i class="fa-solid fa-forward-fast"></i> </button>
+                </div>
+            </div>
+            <div class="song" style="display: none;">
+                <h1> PATCHWORK STACCATO </h1>
+                <p> HATSUNE MIKU </p>
+                <div class="songControls">
+                    <button class="btn" id="backward-btn" onclick = "prevSong()"> <i class="fa-solid fa-backward-fast"></i> </button>
+                    <button class="btn" id="play-pause-btn" onclick="playAudio()"> <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="btn" id="forward-btn" onclick = "nextSong()"> <i class="fa-solid fa-forward-fast"></i> </button>
+                </div>
+            </div>
+            <div class="song" style="display: none;">
+                <h1> SHINPAKUSUU#0822 </h1>
+                <p> AKIE </p>
+                <div class="songControls">
+                    <button class="btn" id="backward-btn" onclick = "prevSong()"> <i class="fa-solid fa-backward-fast"></i> </button>
+                    <button class="btn" id="play-pause-btn" onclick="playAudio()"> <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="btn" id="forward-btn" onclick = "nextSong()"> <i class="fa-solid fa-forward-fast"></i> </button>
+                </div>
+            </div>
+            <div class="song" style="display: none;">
+                <h1> LETTER SONG </h1>
+                <p> AKIE </p>
+                <div class="songControls">
+                    <button class="btn" id="backward-btn" onclick = "prevSong()"> <i class="fa-solid fa-backward-fast"></i> </button>
+                    <button class="btn" id="play-pause-btn" onclick="playAudio()"> <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="btn" id="forward-btn" onclick = "nextSong()"> <i class="fa-solid fa-forward-fast"></i> </button>
+                </div>
+            </div>
+            <div class="song" style="display: none;">
+                <h1> NUIT </h1>
+                <p> AKIE </p>
+                <div class="songControls">
+                    <button class="btn" id="backward-btn" onclick = "prevSong()"> <i class="fa-solid fa-backward-fast"></i> </button>
+                    <button class="btn" id="play-pause-btn" onclick="playAudio()"> <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="btn" id="forward-btn" onclick = "nextSong()"> <i class="fa-solid fa-forward-fast"></i> </button>
+                </div>
+            </div>
+            <div class="song" style="display: none;">
+                <h1> GHOST IN A FLOWER </h1>
+                <p> YORUSHIKA </p>
+                <div class="songControls">
+                    <button class="btn" id="backward-btn" onclick = "prevSong()"> <i class="fa-solid fa-backward-fast"></i> </button>
+                    <button class="btn" id="play-pause-btn" onclick="playAudio()"> <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="btn" id="forward-btn" onclick = "nextSong()"> <i class="fa-solid fa-forward-fast"></i> </button>
+                </div>
+            </div>
+        </div>
+        <div class="coverContainer">
+            <div class="cover" style="background-image:url(covers/internet-overdose.jpg);"> </div>
+            <div class="cover" style="background-image:url(covers/ange-du-blanc-pur.jpg); display: none;"> </div>
+            <div class="cover" style="background-image:url(covers/tell-your-world.jpg); display: none;"> </div>
+            <div class="cover" style="background-image:url(covers/patchwork-staccato.jpg); display: none;"> </div>
+            <div class="cover" style="background-image:url(covers/shinpakusuu.jpg); display: none;"> </div>
+            <div class="cover" style="background-image:url(covers/letter-song.jpg); display: none;"> </div>
+            <div class="cover" style="background-image:url(covers/nuit.jpg); display: none;"> </div>
+            <div class="cover" style="background-image:url(covers/hana-ni-bourei.jpg); display: none;"> </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSong = 0;
+        let Songs = document.querySelectorAll('.song');
+        let audioFiles = document.querySelectorAll('#audioFile');
+        let Covers = document.querySelectorAll('.cover');
+        let playButtons = document.querySelectorAll('#play-pause-btn');
+
+        function playAudio() {
+            audioFiles[currentSong].play();
+            playButtons[currentSong].innerHTML = `<i class="fa-solid fa-pause"></i>`;
+            playButtons[currentSong].onclick = pauseAudio;
+        }
+
+        function pauseAudio() {
+            audioFiles[currentSong].pause();
+            playButtons[currentSong].innerHTML = `<i class="fa-solid fa-play"></i>`;
+            playButtons[currentSong].onclick = playAudio;
+        }
+
+        function hideSong() {
+            Songs[currentSong].style.display = 'none';
+            Covers[currentSong].style.display = 'none';
+            audioFiles[currentSong].pause();
+        }
+
+        function showSong() {
+            Songs[currentSong].style.display = 'flex';
+            Covers[currentSong].style.display = 'flex';
+            audioFiles[currentSong].load();
+            audioFiles[currentSong].play();
+            playButtons[currentSong].innerHTML = `<i class="fa-solid fa-pause"></i>`;
+            playButtons[currentSong].onclick = pauseAudio;
+        }
+
+        function prevSong() {
+            hideSong();
+            currentSong--;
+            if (currentSong == -1) currentSong = Songs.length - 1;
+            showSong();
+        }
+
+        function nextSong() {
+            hideSong();
+            currentSong++;
+            if (currentSong == Songs.length) currentSong = 0;
+            showSong();
+        }
+    </script>
+</body>
+
+</html>
