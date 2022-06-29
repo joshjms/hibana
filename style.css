@@ -1,15 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .hibana {
     min-height: 100vh;
-    background: linear-gradient(
-            rgba(73, 0, 66),
-            rgba(0, 32, 64)
-        );
+    background: linear-gradient(rgba(73, 0, 66), rgba(0, 32, 64));
     display: flex;
 }
 
@@ -41,7 +38,7 @@
     font-size: 40px;
     font-weight: 400;
     max-width: 90%;
-    text-align:center;
+    text-align: center;
 }
 
 .songControls {
@@ -49,7 +46,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
 }
 
 .btn {
@@ -67,7 +64,7 @@
 
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
 .btn:hover {
@@ -108,5 +105,35 @@
     100% {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hibana {
+        flex-direction: column;
+    }
+
+    .songContainer,
+    .coverContainer {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+    }
+
+    .song {
+        height: 80%;
+    }
+
+    .song h1 {
+        font-size: 30px;
+    }
+
+    .song p {
+        font-size: 10px;
+    }
+
+    .cover {
+        height: 40vh;
+        width: 40vh;
     }
 }
