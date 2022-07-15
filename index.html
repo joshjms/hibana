@@ -57,6 +57,10 @@
             <source src="songs/asagao-no-chiru-koro-ni.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <audio id="audioFile" onended = "nextSong()">
+            <source src="songs/happy-synthesizer.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
         <div class="songContainer">
             <div class="song">
                 <h1> INTERNET OVERDOSE </h1>
@@ -158,6 +162,16 @@
                     <button class="btn" id="forward-btn" onclick = "nextSong()"> <i class="fa-solid fa-forward-fast"></i> </button>
                 </div>
             </div>
+            <div class="song" style="display: none;">
+                <h1> HAPPY SYNTHESIZER </h1>
+                <p> GUMI | MEGURINE LUKA </p>
+                <div class="songControls">
+                    <button class="btn" id="backward-btn" onclick = "prevSong()"> <i class="fa-solid fa-backward-fast"></i> </button>
+                    <button class="btn" id="play-pause-btn" onclick="playAudio()"> <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="btn" id="forward-btn" onclick = "nextSong()"> <i class="fa-solid fa-forward-fast"></i> </button>
+                </div>
+            </div>
         </div>
         <div class="coverContainer">
             <div class="cover" style="background-image:url(covers/internet-overdose.jpg);"> </div>
@@ -170,6 +184,7 @@
             <div class="cover" style="background-image:url(covers/hana-ni-bourei.jpg); display: none;"> </div>
             <div class="cover" style="background-image:url(covers/kami-no-manimani.jpg); display: none;"> </div>
             <div class="cover" style="background-image:url(covers/asagao-no-chiru-koro-ni.jpg); display: none;"> </div>
+            <div class="cover" style="background-image:url(covers/happy-synthesizer.jpg); display: none;"> </div>
         </div>
     </div>
 
